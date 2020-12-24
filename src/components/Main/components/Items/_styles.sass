@@ -1,0 +1,52 @@
+.listProducts
+  display: flex
+  flex-flow: row wrap
+  gap: 2.8rem
+  justify-content: center
+  padding: 4rem 2rem
+  .products
+    display: flex
+    flex-flow: column nowrap
+    width: 17.5rem
+    max-width: 17.5rem
+    min-width: 17.5rem
+    height: 19rem
+    min-height: 19rem
+    max-height: 19rem
+    border-radius: 1rem
+    background: $white
+    box-shadow: 0px 0px 25px -13px rgba(0,0,0,0.75)
+    .products__header
+      display: flex
+      flex-flow: column nowrap
+      justify-content: center
+      flex: 1
+      align-items: center
+      margin-top: 1.4rem
+      img
+        filter: invert(25%) sepia(70%) saturate(3269%) hue-rotate(360deg) brightness(104%) contrast(109%)
+      .products__title
+        margin-top: 1.4rem
+        font-size: 1.2rem
+        font-weight: 500
+    .products__description
+      color: $gray
+      text-align: center
+      font-size: 1rem
+      padding: 1rem 0
+    .products__footer.footer
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-between
+      border-bottom-left-radius: 1rem
+      border-bottom-right-radius: 1rem
+      background: rgb(255,142,73)
+      background: linear-gradient(231deg, rgba(255,142,73,1) 0%, rgba(207,103,33,1) 50%, rgba(240,105,10,1) 100%)
+      padding: 1rem 1rem
+      color: $white
+      font-size: 1.8rem
+      font-weight: 700
+      cursor: pointer
+      .footer__button a
+        color: $white
+        text-decoration: none

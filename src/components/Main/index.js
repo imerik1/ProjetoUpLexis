@@ -1,12 +1,15 @@
 import { Component } from "react";
+import Items from "./components/Items";
 import NavBar from "./components/NavBar";
+import Order from "./components/Order";
 
 export class Main extends Component {
   render() {
     return (
       <main className='main'>
-        <h2 className='main__alert'>Deslize para o lado</h2>
         <NavBar />
+        <Order />
+        <Items />
       </main>
     );
   }

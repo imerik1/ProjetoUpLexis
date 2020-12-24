@@ -1,5 +1,5 @@
 import { Component } from "react";
-import logo from "./assets/LogoUpMiner.png";
+import logo from "../../assets/logoUpMiner.png";
 
 export class Header extends Component {
   render() {
@@ -21,7 +21,7 @@ export class Header extends Component {
               <span className='article__value'>40,00</span>
               <nav className='article__nav nav'>
                 <button className='nav__button button'>
-                  <a className='button__link' href='/' ref='nofollow'>
+                  <a className='button__link' href='/'>
                     Saiba mais
                   </a>
                 </button>
