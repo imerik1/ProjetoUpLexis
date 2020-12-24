@@ -1,0 +1,83 @@
+.header
+  display: flex
+  flex-flow: row nowrap
+  padding: 0 0 0 5rem
+  color: $white
+  border-bottom: 4px solid $orange
+  background: rgb(20,78,112)
+  background: linear-gradient(70deg, rgba(20,78,112,1) 0%, rgba(13,58,86,1) 11%, rgba(7,36,57,1) 22%, rgba(1,17,33,1) 33%, rgba(0,9,21,1) 59%)
+  .header__section
+    flex: 1
+    display: block
+  @media (max-width: 480px)
+    padding: 0
+    flex-flow: column-reverse nowrap
+  @media (min-width: 1200px)
+    padding: 0 0 0 14rem
+  .sectionOne
+    .article
+      display: flex
+      flex-flow: column nowrap
+      @media (max-width: 480px)
+        padding: 0 1.6rem
+        justify-content: center
+        align-content: center
+      .article__header
+        display: flex
+        flex-flow: row nowrap
+        padding: 1rem 0
+        justify-content: left
+        align-content: center
+        .article__logo
+          padding: 0 1.3rem 0 0
+          width: 6rem
+          height: auto
+        .article__title
+          align-self: center
+          font-size: 1.2rem
+          font-weight: 500
+          padding: 0 0 0 1.3rem
+          border-left: 1px solid white
+          white-space: nowrap
+      .article__description
+        font-size: 0.8rem
+        padding: 0.7rem 0
+      .article__footer
+        display: flex
+        height: fit-content
+        flex-flow: row nowrap
+        align-content: center
+        padding: 0.7rem 0
+        .article__symbol
+          align-self: flex-end
+          margin-bottom: .24rem
+          font-size: 0.7rem
+        .article__value
+          padding: 0 0 0 0.3rem
+          font-size: 2rem
+        .article__nav
+          width: fit-content
+          height: fit-content
+          align-self: center
+          padding: 0 1rem
+          .nav__button
+            height: fit-content
+            padding: 0.4rem 0
+            border: none
+            border-radius: 0.4rem
+            background: rgb(255,142,73)
+            background: linear-gradient(231deg, rgba(255,142,73,1) 0%, rgba(207,103,33,1) 50%, rgba(240,105,10,1) 100%)
+            .button__link
+              color: white
+              padding: 0.4rem 1rem
+              text-decoration: none
+              font-size: 0.8rem
+
+  .sectionTwo
+    background: url('./assets/backgroundHeader.png')
+    background-size: cover
+    background-position: center
+    background-position-y: -1rem
+    background-repeat: no-repeat
+    @media (max-width: 480px)
+      min-height: 14rem
