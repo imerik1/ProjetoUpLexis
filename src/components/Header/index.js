@@ -21,7 +21,7 @@ export class Header extends Component {
               <span className='article__value'>40,00</span>
               <nav className='article__nav nav'>
                 <button className='nav__button button'>
-                  <a className='button__link' href='#' ref='nofollow'>
+                  <a className='button__link' href='/' ref='nofollow'>
                     Saiba mais
                   </a>
                 </button>
