@@ -1,15 +1,20 @@
 @import './variables'
 @import './components/Header/styles'
 @import './components/Main/styles'
+@import './components/Article/styles'
 *
   font-family: 'Roboto', sans-serif
   margin: 0
   padding: 0
   font-size: 66.5%
+  overflow-x: hidden
   @media (max-width: 480px)
     font-size: 63.6%
   @media (min-width: 1200px)
     font-size: 80%
+
+button, .footer__button, .list__title
+  overflow-y: hidden
 
 #root
   display: flex

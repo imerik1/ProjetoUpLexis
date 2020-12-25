@@ -1,0 +1,87 @@
+.main__slide
+  display: flex
+  flex-flow: column nowrap
+  max-width: 100vw
+  justify-content: center
+  align-items: center
+  margin: 2rem 0
+  .article__slide
+    padding: 1rem 1rem
+    width: 100%
+    max-width: 82rem
+    .article__slide__header
+      margin-left: 1rem
+      width: fit-content
+      display: flex
+      flex-flow: row nowrap
+      align-items: center
+      img
+        height: 1.2rem
+        margin: 0 0.8rem 0.1rem 0
+      h1 a
+        font-size: 1.6rem
+        color: $orange
+        text-decoration: none
+        font-weight: 500
+    .article__sliders__each
+      display: flex
+      flex-flow: row
+      gap: 1rem
+      justify-content: center
+      align-items: center
+      padding: 4rem 0
+      .article__sliders__each__div
+        max-width: 36rem
+        min-width: 24rem
+        width: fit-content
+        padding: 2rem 2rem
+        border-radius: 1.4rem
+        box-shadow: 0px 0px 45px -24px rgba(10,2,10,1)
+        img
+          max-width: 100%
+        h3
+          color: $orange
+          font-size: 1.8rem
+
+    .article__slide__description
+      margin: 1.6rem 1rem
+      font-size: 1.2rem
+      color: $gray
+    .article__slide__footer
+      width: fit-content
+      display: flex
+      flex-flow: row nowrap
+      align-items: center
+      margin: 0 1rem
+      .footer__currency
+        span
+          color: $black
+          font-size: 2rem
+          font-weight: 500
+          &:nth-child(1)
+            font-size: 1.2rem
+            margin-right: .2rem
+      .footer__button
+        width: fit-content
+        height: fit-content
+        button
+          border: none
+          border-radius: 1rem
+          color: $white
+          padding: 0.4rem 1rem
+          margin: 0.2rem 1rem 0
+          font-size: 1.3rem
+          cursor: pointer
+          background: rgb(255,142,73)
+          background: linear-gradient(231deg, rgba(255,142,73,1) 0%, rgba(207,103,33,1) 50%, rgba(240,105,10,1) 100%)
+          &:focus
+            outline: none
+    .article__slider
+      img
+        max-width: 32rem
+        z-index: 2
+      h3
+        margin: .7rem 0 0
+        color: $orange
+        max-width: 36.5rem
+        font-size: 1.4rem

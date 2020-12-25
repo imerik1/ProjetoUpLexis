@@ -68,7 +68,7 @@ export function Items() {
     setList(!list);
   };
   return (
-    <div>
+    <div className='main__order'>
       <section className='order'>
         <label className='order__label' htmlFor='order'>
           Ordenar
