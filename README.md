@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Olá, este foi um projeto para a empresa UpLexis
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### [Você pode instalar o layout utilizado para criação da aplicação, clicando aqui.](https://srv-store2.gofile.io/download/gsjP2R/Teste-Front.psd)
 
-## Available Scripts
+<br>
+<br>
 
-In the project directory, you can run:
+# Ferramentas
 
-### `yarn start`
+### - Foram utilizados React e o pré compilador SASS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### - Classes de fácil compreensão
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### - Não foi utilizado nenhuma biblioteca, com exceção do React Router DOM para criação de uma rota "/sobre"
 
-### `yarn test`
+### - O site contém slide automático
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### - Ordena os cards ao selecionar uma das duas opções presentes
 
-### `yarn build`
+### - Filtra os cards conforme excluído pelo usuário
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### - Todos os botões do site leva ao mesmo endereço "/sobre"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br>
+<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Esclarecimentos
 
-### `yarn eject`
+### - O projeto foi permitido a publicação pública do mesmo conforme as orientações entregues a mim.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### - Os dados são consultados de uma função que retorna arrays dentro do "./assets"
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Instalação
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## - Antes de tudo tenha instalado o GIT, caso não, você pode instalar [clicando aqui](https://git-scm.com/downloads)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## - Após isso, utilize o comando
 
-## Learn More
+    > git clone https://github.com/imerik1/ProjetoUpLexis.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## - Depois de clonado o repositório, utilize:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    > cd ProjetoUpLexis
 
-### Code Splitting
+### Para ir ao diretório
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## - Após isso, utilize:
 
-### Analyzing the Bundle Size
+    > yarn start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## - Será aberto uma página no seu navegador padrão com o endereço localhost
 
-### Making a Progressive Web App
+<br>
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Deploy
 
-### Advanced Configuration
+## - O projeto foi feito deploy com a vercel, você pode ver o site funcionando sem precisar clonar
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# [Clicando aqui](https://projeto-up-lexis.vercel.app/)
