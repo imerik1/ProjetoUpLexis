@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import logoWhite from "../../assets/logoUpMinerWhite.png";
 import logoBlack from "../../assets/logoUpMinerBlack.png";
 
@@ -28,12 +29,12 @@ export class Header extends Component {
               <span className='article__value'>40,00</span>
               <nav className='article__nav nav'>
                 <button className='nav__button button'>
-                  <a
+                  <Link
                     className='button__link'
-                    href={this.props.color ? "/sobre" : "/"}
+                    to={this.props.color ? "/sobre" : "/"}
                   >
-                    Saiba mais
-                  </a>
+                    Saiba Mais
+                  </Link>
                 </button>
               </nav>
             </footer>

@@ -8,8 +8,9 @@ import midiaNet from "./midiaNet.svg";
 import bensIm from "./bensIm.svg";
 import cad from "./cad.svg";
 import finan from "./finan.svg";
+import slideImg from "./slide.jpeg";
 
-export default function getData() {
+export function getData() {
   const navs = [
     {
       name: "Todos",
@@ -144,3 +145,21 @@ export default function getData() {
 
   return navs;
 }
+
+export const Article = () => {
+  const article = {
+    name: "Histórico Empresarial",
+    description: `O aplicativo Histórico Empresarial permite ao usuário ter acesso a todos os fatos e acontecimentos relevantes de uma empresa desde o seu ano de 
+      fundação. Tenha acesso aos principais eventos corporativos de uma empresa, como: marcos jurídicos, mudança no quadro societário, aumento de 
+      capital,reportagens e muito mais.
+      
+      Após realizar a consulta, o histórico é salvo automaticamente, tornando as informações acessíveis ao usuário. A linha do tempo pode também ser 
+      exportada no formato PDF.`,
+    price: "40,00",
+  };
+  const slide = {
+    image: <img src={slideImg} alt='slideShow' />,
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
+    smod tempor incididunt ut labore et dolore magna aliqua.`,
+  };
+};

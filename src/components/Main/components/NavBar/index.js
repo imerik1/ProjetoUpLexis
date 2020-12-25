@@ -1,4 +1,4 @@
-import getData from "../../../../assets/index";
+import { getData } from "../../../../assets/index";
 import { Validation } from "./validator";
 export function NavBar() {
   const listNav = getData().map((nav, id) => (

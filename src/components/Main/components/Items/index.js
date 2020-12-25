@@ -1,5 +1,6 @@
-import getData from "../../../../assets/index";
+import { getData } from "../../../../assets/index";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const orderArray = getData().sort((a, b) => {
   return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
@@ -24,7 +25,7 @@ const OrderNav = orderArray.map((nav, id) => {
             <span>{nav.value}</span>
           </div>
           <div className='footer__button'>
-            <a href='/sobre'>Saiba Mais</a>
+            <Link to='/sobre'>Saiba Mais</Link>
           </div>
         </footer>
       </article>
@@ -52,7 +53,7 @@ const listNav = getData().map((nav, id) => {
             <span>{nav.value}</span>
           </div>
           <div className='footer__button'>
-            <a href='/sobre'>Saiba Mais</a>
+            <Link to='/sobre'>Saiba Mais</Link>
           </div>
         </footer>
       </article>
