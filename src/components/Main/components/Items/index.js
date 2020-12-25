@@ -11,7 +11,7 @@ const OrderNav = orderArray.map((nav, id) => {
     return (
       <article
         key={id}
-        className={`list__products products active ${nav.class}`}
+        className={`list__products products ${nav.class} active`}
         id={`items${nav.class}`}
       >
         <header className='products__header'>
@@ -39,7 +39,7 @@ const listNav = getData().map((nav, id) => {
     return (
       <article
         key={id}
-        className={`list__products products active ${nav.class}`}
+        className={`list__products products ${nav.class} active`}
         id={`items${nav.class}`}
       >
         <header className='products__header'>
@@ -66,6 +66,37 @@ export function Items() {
   const [list, setList] = useState(true);
   const ToggleList = () => {
     setList(!list);
+    document
+      .querySelectorAll(".list__items.Todos")[0]
+      .classList.remove("active");
+    document.querySelectorAll(".list__items.Todos")[0].classList.add("active");
+    document
+      .querySelectorAll(".list__items.Profissional")[0]
+      .classList.remove("active");
+    document
+      .querySelectorAll(".list__items.Reguladores")[0]
+      .classList.remove("active");
+    document
+      .querySelectorAll(".list__items.SócioAmbiental")[0]
+      .classList.remove("active");
+    document
+      .querySelectorAll(".list__items.Jurídico")[0]
+      .classList.remove("active");
+    document
+      .querySelectorAll(".list__items.ListasRestritivas")[0]
+      .classList.remove("active");
+    document
+      .querySelectorAll(".list__items.MídiaInternet")[0]
+      .classList.remove("active");
+    document
+      .querySelectorAll(".list__items.BenseImóveis")[0]
+      .classList.remove("active");
+    document
+      .querySelectorAll(".list__items.Cadastro")[0]
+      .classList.remove("active");
+    document
+      .querySelectorAll(".list__items.Financeiro")[0]
+      .classList.remove("active");
   };
   return (
     <div className='main__order'>
