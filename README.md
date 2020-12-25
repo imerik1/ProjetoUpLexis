@@ -48,6 +48,10 @@
 
 ### Para ir ao diretório
 
+## - Instale as dependências com:
+
+    > yarn install
+
 ## - Após isso, utilize:
 
     > yarn start
