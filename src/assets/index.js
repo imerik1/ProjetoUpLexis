@@ -17,6 +17,7 @@ export default function getData() {
       active: true,
       value: "29,99",
       data: 1,
+      class: "Todos",
     },
     {
       name: "Profissional",
@@ -25,6 +26,7 @@ export default function getData() {
       description: "",
       value: "29,99",
       data: 2,
+      class: "Profissional",
     },
     {
       name: "Reguladores",
@@ -38,6 +40,7 @@ export default function getData() {
       `,
       value: "29,99",
       data: 3,
+      class: "Reguladores",
     },
     {
       name: "Sócio Ambiental",
@@ -51,6 +54,7 @@ export default function getData() {
       `,
       value: "29,99",
       data: 4,
+      class: "SócioAmbiental",
     },
     {
       name: "Jurídico",
@@ -64,6 +68,7 @@ export default function getData() {
       `,
       value: "29,99",
       data: 5,
+      class: "Jurídico",
     },
     {
       name: "Listas Restritivas",
@@ -77,6 +82,7 @@ export default function getData() {
       `,
       value: "29,99",
       data: 6,
+      class: "ListasRestritivas",
     },
     {
       name: "Mídia/Internet",
@@ -90,6 +96,7 @@ export default function getData() {
       `,
       value: "29,99",
       data: 7,
+      class: "MídiaInternet",
     },
     {
       name: "Bens e Imóveis",
@@ -103,6 +110,7 @@ export default function getData() {
       `,
       value: "29,99",
       data: 8,
+      class: "BenseImóveis",
     },
     {
       name: "Cadastro",
@@ -116,6 +124,7 @@ export default function getData() {
       `,
       value: "29,99",
       data: 9,
+      class: "Cadastro",
     },
     {
       name: "Financeiro",
@@ -129,6 +138,7 @@ export default function getData() {
       `,
       value: "29,99",
       data: 10,
+      class: "Financeiro",
     },
   ];
 

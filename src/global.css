@@ -278,27 +278,6 @@
   background: #f26f14;
 }
 
-.order {
-  font-size: 1.8rem;
-  color: #171717;
-  padding: 0 0 0 2rem;
-}
-
-.order .order__label {
-  font-weight: 700;
-  padding: 0 1rem 0 0;
-}
-
-.order .order__select.select {
-  border: 1px solid rgba(54, 54, 54, 0.4);
-  border-radius: .4rem;
-  padding: .2rem;
-}
-
-.order .order__select.select .select__value {
-  font-size: 1.6rem;
-}
-
 .listProducts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -315,13 +294,7 @@
 }
 
 .listProducts .products {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  display: none;
   width: 17.5rem;
   max-width: 17.5rem;
   min-width: 17.5rem;
@@ -332,9 +305,21 @@
   background: white;
   -webkit-box-shadow: 0px 0px 25px -13px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 25px -13px rgba(0, 0, 0, 0.75);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.listProducts .products .products__header {
+.listProducts .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.listProducts .active .products__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,25 +339,25 @@
   margin-top: 1.4rem;
 }
 
-.listProducts .products .products__header img {
+.listProducts .active .products__header img {
   -webkit-filter: invert(25%) sepia(70%) saturate(3269%) hue-rotate(360deg) brightness(104%) contrast(109%);
           filter: invert(25%) sepia(70%) saturate(3269%) hue-rotate(360deg) brightness(104%) contrast(109%);
 }
 
-.listProducts .products .products__header .products__title {
+.listProducts .active .products__header .products__title {
   margin-top: 1.4rem;
   font-size: 1.2rem;
   font-weight: 500;
 }
 
-.listProducts .products .products__description {
+.listProducts .active .products__description {
   color: #837979;
   text-align: center;
   font-size: 1rem;
   padding: 1rem 0;
 }
 
-.listProducts .products .products__footer.footer {
+.listProducts .active .products__footer.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,9 +379,30 @@
   cursor: pointer;
 }
 
-.listProducts .products .products__footer.footer .footer__button a {
+.listProducts .active .products__footer.footer .footer__button a {
   color: white;
   text-decoration: none;
+}
+
+.order {
+  font-size: 1.8rem;
+  color: #171717;
+  padding: 0 0 0 2rem;
+}
+
+.order .order__label {
+  font-weight: 700;
+  padding: 0 1rem 0 0;
+}
+
+.order .order__select.select {
+  border: 1px solid rgba(54, 54, 54, 0.4);
+  border-radius: .4rem;
+  padding: .2rem;
+}
+
+.order .order__select.select .select__value {
+  font-size: 1.6rem;
 }
 
 * {

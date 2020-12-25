@@ -5,8 +5,7 @@
   justify-content: center
   padding: 4rem 2rem
   .products
-    display: flex
-    flex-flow: column nowrap
+    display: none
     width: 17.5rem
     max-width: 17.5rem
     min-width: 17.5rem
@@ -16,6 +15,10 @@
     border-radius: 1rem
     background: $white
     box-shadow: 0px 0px 25px -13px rgba(0,0,0,0.75)
+    transition: 1s
+  .active
+    display: flex
+    flex-flow: column nowrap
     .products__header
       display: flex
       flex-flow: column nowrap
@@ -50,3 +53,17 @@
       .footer__button a
         color: $white
         text-decoration: none
+
+.order
+  font-size: 1.8rem
+  color: $black
+  padding: 0 0 0 2rem
+  .order__label
+    font-weight: 700
+    padding: 0 1rem 0 0
+  .order__select.select
+    border: 1px solid rgba(54, 54, 54, 0.4)
+    border-radius: .4rem
+    padding: .2rem
+    .select__value
+      font-size: 1.6rem

@@ -1,15 +1,16 @@
 import getData from "../../../../assets/index";
-export default function NavBar() {
+import { Validation } from "./validator";
+export function NavBar() {
   const listNav = getData().map((nav, id) => (
     <div
       key={id}
-      id={nav.name}
-      onClick={(e) => {
-        if (e.currentTarget.classList !== "active") {
-          e.currentTarget.classList.toggle("active");
-        }
-      }}
-      className={nav.active ? "list__items active" : "list__items"}
+      id={id}
+      onClick={Validation}
+      className={
+        nav.active
+          ? `list__items active ${nav.class}`
+          : `list__items ${nav.class}`
+      }
     >
       {nav.logo}
       <h3 className='list__title'>{nav.name}</h3>
