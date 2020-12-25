@@ -1,3 +1,9 @@
+.header.blue {
+  color: white;
+  background: #144e70;
+  background: linear-gradient(70deg, #144e70 0%, #0d3a56 11%, #072439 22%, #011121 33%, #000915 59%);
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7,10 +13,9 @@
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   padding: 0 0 0 5rem;
-  color: white;
   border-bottom: 4px solid #f26f14;
-  background: #144e70;
-  background: linear-gradient(70deg, #144e70 0%, #0d3a56 11%, #072439 22%, #011121 33%, #000915 59%);
+  background: #d8d8d8;
+  background: linear-gradient(70deg, #d8d8d8 0%, #dadada 14%, #e2e2e2 28%, #eaeaea 53%, #fafafa 67%);
 }
 
 .header .header__section {
@@ -91,13 +96,22 @@
   font-size: 1.5rem;
   font-weight: 500;
   padding: 0 0 0 1.3rem;
-  border-left: 1px solid white;
+  border-left: 1px solid #837979;
   white-space: nowrap;
+}
+
+.header .sectionOne .article .article__header .article__title.blue {
+  border-left: 1px solid white;
 }
 
 .header .sectionOne .article .article__description {
   font-size: 1.4rem;
   padding: 0.7rem 0;
+  color: #837979;
+}
+
+.header .sectionOne .article .article__description.blue {
+  color: white;
 }
 
 .header .sectionOne .article .article__footer {
@@ -159,8 +173,22 @@
   font-size: 1.2rem;
 }
 
-.header .sectionTwo {
+.header .sectionTwo.blue {
   background: url("./assets/backgroundHeader.png");
+  background-size: cover;
+  background-position: center;
+  background-position-y: 0rem;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 480px) {
+  .header .sectionTwo.blue {
+    min-height: 14rem;
+  }
+}
+
+.header .sectionTwo {
+  background: url("./assets/backgroundGrayHeader.png");
   background-size: cover;
   background-position: center;
   background-position-y: 0rem;
@@ -187,7 +215,7 @@
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   overflow-x: auto;
-  padding: 1rem 1rem;
+  padding: 3rem 1rem 0rem;
 }
 
 @media (min-width: 1270px) {
@@ -382,12 +410,13 @@
 .listProducts .active .products__footer.footer .footer__button a {
   color: white;
   text-decoration: none;
+  padding: 1.4rem 0rem 1rem 2rem;
 }
 
 .order {
   font-size: 1.8rem;
   color: #171717;
-  padding: 0 0 0 2rem;
+  padding: 3rem 0 0 4.1rem;
 }
 
 .order .order__label {
@@ -414,7 +443,7 @@
 
 @media (max-width: 480px) {
   * {
-    font-size: 62.5%;
+    font-size: 63.6%;
   }
 }
 

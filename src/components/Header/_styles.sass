@@ -1,11 +1,14 @@
+.header.blue
+  color: $white
+  background: rgb(20,78,112)
+  background: linear-gradient(70deg, rgba(20,78,112,1) 0%, rgba(13,58,86,1) 11%, rgba(7,36,57,1) 22%, rgba(1,17,33,1) 33%, rgba(0,9,21,1) 59%)
 .header
   display: flex
   flex-flow: row nowrap
   padding: 0 0 0 5rem
-  color: $white
   border-bottom: 4px solid $orange
-  background: rgb(20,78,112)
-  background: linear-gradient(70deg, rgba(20,78,112,1) 0%, rgba(13,58,86,1) 11%, rgba(7,36,57,1) 22%, rgba(1,17,33,1) 33%, rgba(0,9,21,1) 59%)
+  background: rgb(216,216,216)
+  background: linear-gradient(70deg, rgba(216,216,216,1) 0%, rgba(218,218,218,1) 14%, rgba(226,226,226,1) 28%, rgba(234,234,234,1) 53%, rgba(250,250,250,1) 67%)
   .header__section
     padding: 1.6rem 0
     flex: 1
@@ -39,11 +42,16 @@
           font-size: 1.5rem
           font-weight: 500
           padding: 0 0 0 1.3rem
-          border-left: 1px solid white
+          border-left: 1px solid $gray
           white-space: nowrap
+        .article__title.blue
+          border-left: 1px solid $white
       .article__description
         font-size: 1.4rem
         padding: 0.7rem 0
+        color: $gray
+      .article__description.blue
+        color: $white
       .article__footer
         display: flex
         height: fit-content
@@ -75,8 +83,17 @@
               text-decoration: none
               font-size: 1.2rem
 
-  .sectionTwo
+  .sectionTwo.blue
     background: url('./assets/backgroundHeader.png')
+    background-size: cover
+    background-position: center
+    background-position-y: 0rem
+    background-repeat: no-repeat
+    @media (max-width: 480px)
+      min-height: 14rem
+
+  .sectionTwo
+    background: url('./assets/backgroundGrayHeader.png')
     background-size: cover
     background-position: center
     background-position-y: 0rem

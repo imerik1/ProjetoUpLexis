@@ -3,7 +3,7 @@ import { Main } from "./components/Main";
 function App() {
   return (
     <section id='root'>
-      <Header />
+      <Header color={true} bg='blue' />
       <Main />
     </section>
   );
