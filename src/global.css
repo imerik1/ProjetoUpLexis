@@ -336,7 +336,7 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  gap: 2.8rem;
+  gap: .8rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -349,6 +349,7 @@
   max-width: 17.5rem;
   min-width: 17.5rem;
   height: 19rem;
+  margin: 2rem 2rem;
   min-height: 19rem;
   max-height: 19rem;
   border-radius: 1rem;
@@ -424,9 +425,15 @@
   background: linear-gradient(231deg, #ff8e49 0%, #cf6721 50%, #f0690a 100%);
   padding: 1rem 1rem;
   color: white;
-  font-size: 1.8rem;
-  font-weight: 700;
-  cursor: pointer;
+  font-size: 3rem;
+}
+
+@media (min-width: 1200px) {
+  .main__order .listProducts .active .products__footer.footer {
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
 }
 
 .main__order .listProducts .active .products__footer.footer .footer__button a {
