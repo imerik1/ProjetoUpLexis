@@ -49,12 +49,13 @@
 ### Para ir ao diretório
 
 ## - Instale as dependências com:
+### Aconselho a utilização de yarn preferencialmente.
 
-    > yarn install
+    > yarn install ou npm install
 
 ## - Após isso, utilize:
 
-    > yarn start
+    > yarn start ou npm start
 
 ## - Será aberto uma página no seu navegador padrão com o endereço localhost
 
