@@ -4,8 +4,6 @@ import arrowBack from "../../assets/arrowBack.png";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
-console.log(GetArticle().description);
-
 export const Article = () => {
   const article = GetArticle()[0];
   const slide = GetArticle()[1];
