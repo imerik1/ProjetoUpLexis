@@ -31,7 +31,7 @@ export const Article = () => {
           </h1>
         </header>
         <section id='sliders' className='article__slide__section'>
-          <Slide className='article__sliders' duration={2500} autoplay={true}>
+          <Slide className='article__sliders' duration={1400} autoplay={true}>
             {listSlides}
           </Slide>
         </section>
